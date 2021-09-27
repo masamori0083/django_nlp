@@ -1,4 +1,4 @@
-<h1>Hello python</h1>
+<h1>Product category AI</h1>
 
 <form action="{% url 'home' %}" method="post">
 	<input type="text" name="title">
@@ -6,5 +6,6 @@
 	<button type="submit">Send</button>
 </form>
 
-
-<h1>title: {{ title }}</h1>
+{% if title %}
+	<h1>Prediction: {{ title }}</h1>
+{% endif %}
